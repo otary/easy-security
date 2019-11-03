@@ -9,8 +9,12 @@
 - [easy-security-server](./easy-security-server): 认证服务端
   - [使用教程](./easy-security-server/README.md)
 - [easy-security-client](./easy-security-client): 客户端工具类
+  - [使用教程](./easy-security-client/README.md)
 - [easy-security-keygen](./easy-security-keygen): 密钥生成器
+  - [使用教程](./easy-security-keygen/README.md)
 - [easy-security-example](./easy-security-example): 示例
+  - [easy-security-springmvc-example](./easy-security-example/easy-security-springmvc-example): springmvc项目集成示例
+  - [easy-security-springboot-example](./easy-security-example/easy-security-springboot-example): springboot项目集成示例
 
 ## 响应状态码
 
