@@ -52,7 +52,7 @@ public class EasySecurityConstants {
         OPEN_API_MAPPING = openApiMapping;
     }
 
-    @Value("${easy.security.encoding:/utf-8}")
+    @Value("${easy.security.encoding:utf-8}")
     public void setENCODING(String ENCODING) {
         EasySecurityConstants.ENCODING = ENCODING;
     }

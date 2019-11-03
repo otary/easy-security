@@ -38,7 +38,6 @@ public class EasySecurityFilter extends OncePerRequestFilter {
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
-
         if (StringUtils.isNotEmpty(EasySecurityConstants.getOpenApiMapping())) {
             if (!StringUtils.startsWithAny(request.getRequestURI(), StringUtils.split(EasySecurityConstants.getOpenApiMapping(), ","))) {
                 filterChain.doFilter(request, response);
@@ -46,7 +45,6 @@ public class EasySecurityFilter extends OncePerRequestFilter {
         }
 
         logger.debug("security filter url [{}].", request.getRequestURI());
-
         try {
             for (EasySecurityHandler easySecurityHandler : easySecurityHandlers) {
                 if (easySecurityHandler.matches(request, response)) {
@@ -68,7 +66,6 @@ public class EasySecurityFilter extends OncePerRequestFilter {
 
 
     private void handleResponse(HttpServletResponse response, int code, String message) throws IOException {
-        response.reset();
         response.setCharacterEncoding(EasySecurityConstants.getENCODING());
         response.setContentType("application/json;charset=" + EasySecurityConstants.getENCODING());
         response.setStatus(code);
