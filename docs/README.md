@@ -7,7 +7,6 @@
 ![](https://img.shields.io/badge/commons--lang3-3.7-brightgreen)
 ![](https://img.shields.io/badge/commons--codec-1.12-brightgreen)
 ![](https://img.shields.io/badge/toolkit-1.0.1-brightgreen)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c2bd9fe0366a4ee5a3a44b04a1eeff1b)](https://www.codacy.com/manual/otary/easy-security?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=otary/easy-security&amp;utm_campaign=Badge_Grade)
 [![Build Status](https://travis-ci.org/otary/easy-security.svg?branch=master)](https://travis-ci.org/otary/easy-security)
 
 ## 文档
@@ -40,3 +39,9 @@
 403| You has no permission to access this api | 没有权限访问此API
 403 | This api internal access only | 该API未开放外部访问
 
+
+[](zh-cn/easy-security-server/README.md ':include')
+
+[](zh-cn/easy-security-client/README.md ':include')
+
+[](zh-cn/easy-security-keygen/README.md ':include')
