@@ -4,11 +4,11 @@
 
 ## Usage
 
-### 添加依赖
+### 依赖
 
 - **maven方式**
  
- ``` xml
+``` xml
 <dependency>
     <groupId>cn.chenzw.security</groupId>
     <artifactId>easy-security-client</artifactId>
@@ -22,7 +22,6 @@
 ```
 compile group: 'cn.chenzw.security', name: 'easy-security-client', version: '1.0.0'
 ```
-
 
 ### 调用方法
 

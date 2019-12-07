@@ -54,7 +54,7 @@ easy.security.open-api-mapping=/openapi,/rest
 easy.security.encoding=utf-8
 ```
 
-## 使用@OpenApiSecurity注解标注需要认证的api
+### 使用@OpenApiSecurity注解标注需要认证的api
 
 ``` java
 @RestController
@@ -72,7 +72,7 @@ public class OpenApiController {
 
 ## 附录
 
-##### @OpenApiSecurity注解
+### @OpenApiSecurity注解
 
 属性
 - allowSysId: 用户指定允许访问的sysId（多个sysId之间使用逗号间隔）, *号表示允许所有sysId访问
