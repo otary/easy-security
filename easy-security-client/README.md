@@ -8,7 +8,7 @@
 
 - **maven方式**
  
- ```
+ ``` xml
 <dependency>
     <groupId>cn.chenzw.security</groupId>
     <artifactId>easy-security-client</artifactId>
@@ -26,7 +26,7 @@ compile group: 'cn.chenzw.security', name: 'easy-security-client', version: '1.0
 
 ### 调用方法
 
-```
+``` java
 /**
   * 生成accessToken头部
   * @param privateKey 参数1：密钥（由服务端提供）

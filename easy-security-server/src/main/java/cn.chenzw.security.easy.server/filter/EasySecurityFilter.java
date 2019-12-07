@@ -54,7 +54,7 @@ public class EasySecurityFilter extends OncePerRequestFilter {
             }
             filterChain.doFilter(request, response);
         } catch (EasySecurityException e) {
-            logger.error("security filter url [{}] failure.", request.getRequestURI());
+            logger.warn("security filter url [{}] failure.", request.getRequestURI());
 
             handleResponse(response, e.getHttpCode(), e.getMessage());
         } catch (Exception e) {

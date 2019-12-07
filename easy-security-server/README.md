@@ -9,7 +9,7 @@
  
 - maven 方式
  
- ```
+ ``` xml
 <dependency>
     <groupId>cn.chenzw.security</groupId>
     <artifactId>easy-security-server</artifactId>
@@ -28,7 +28,7 @@ compile group: 'cn.chenzw.security', name: 'easy-security-server', version: '1.0
 
 - 使用`@EnableEasySecurity`开启认证服务
 
-```
+``` java
 @EnableEasySecurity
 @Configuration
 public class EasySecurityConfig {
@@ -40,7 +40,7 @@ public class EasySecurityConfig {
 
 - 可在项目`resources`下新建`security.properties` 或 直接在`application.properties`中添加单点配置参数
 
-```
+``` properties
 ## 指定服务端私钥（必须）
 easy.security.private-key=123456
 
@@ -56,7 +56,7 @@ easy.security.encoding=utf-8
 
 ## 使用@OpenApiSecurity注解标注需要认证的api
 
-```
+``` java
 @RestController
 @RequestMapping("/openapi")
 public class OpenApiController {
